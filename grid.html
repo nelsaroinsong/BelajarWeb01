@@ -3,16 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid Layout</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+    <title>Portofolio - Grid</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Poppins, sans-serif;
+        }
+        
+        .box {
+            padding: 20px;
+            overflow-y: auto;
+        }
+        
+        .box h2, .box h3 {
+            margin-top: 0;
+        }
+        
+        .box ul {
+            padding-left: 20px;
+        }
+    </style>
 </head>
 <body>
     <div class="grid-container">
-        <div class="box" style="grid-area: box-1;"></div>
-        <div class="box" style="grid-area: box-2;"></div>
-        <div class="box" style="grid-area: box-3;"></div>
-        <div class="box" style="grid-area: box-4;"></div>
-        <div class="box" style="grid-area: box-5;"></div>
+        <div class="box" style="grid-area: box-1;">
+            <h2>Lionel Kisra Injili</h2>
+            <p><strong>Web Developer | UI/UX Designer | Mahasiswa</strong></p>
+            <p>Saya adalah mahasiswa yang memiliki minat dalam pengembangan web dan desain UI/UX.</p>
+            <nav>
+                <ul>
+                    <li><a href="#tentang">Tentang Saya</a></li>
+                    <li><a href="#pendidikan">Pendidikan</a></li>
+                    <li><a href="#pengalaman">Pengalaman</a></li>
+                    <li><a href="#skill">Skill</a></li>
+                    <li><a href="kontak.html">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="box" style="grid-area: box-2;">
+            <h2>Tentang Saya</h2>
+            <p>Saya adalah mahasiswa yang memiliki minat dalam pengembangan web dan desain UI/UX.</p>
+            <p><strong>Email:</strong> lionel.kisra.injili@gmail.com</p>
+        </div>
+        
+        <div class="box" style="grid-area: box-3;">
+            <h2>Pendidikan</h2>
+            <h3>D4 Teknik Informatika</h3>
+            <p>Politeknik Negeri Manado (2024 - 2028)</p>
+            <h3>SMK Negeri 3 Manado</h3>
+            <p>Jurusan Rekayasa Perangkat Lunak (2021 - 2024)</p>
+        </div>
+        
+        <div class="box" style="grid-area: box-4;">
+            <h2>Pengalaman / Project</h2>
+            <h3>Magang di KOMINFO Manado</h3>
+            <p>Website POS Kasir</p>
+            <p>Website E-Commerce</p>
+        </div>
+        
+        <div class="box" style="grid-area: box-5;">
+            <h2>Skill</h2>
+            <ul>
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+                <li>UI/UX Design</li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>
